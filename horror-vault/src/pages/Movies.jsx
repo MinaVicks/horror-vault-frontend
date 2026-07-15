@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import { getHorrorMovies } from "../utils/api.js";
-import MovieList from "../components/MovieList/MovieList";
+import MovieList from "../components/MovieList/MovieList.jsx";
 import SearchForm from "../components/SearchForm/SearchForm.jsx";
+import Preloader from "../components/Preloader/Preloader.jsx";
 import { searchMovies } from "../utils/api.js";
+import Header from "../components/Header/Header.jsx";
+
+import Footer from "../components/Footer/Footer.jsx";
 
 function Movies() {
   const [movies, setMovies] = useState([]);
@@ -40,7 +44,8 @@ function Movies() {
 
   return (
     <main>
-      <h1>Horror Vault</h1>
+      < Header />
+    
 
       <SearchForm
   query={query}
@@ -49,15 +54,21 @@ function Movies() {
 />
 
       {loading ? (
-        <p>Loading...</p>
-      ) : (
+        <Preloader />
+      ) : movies.length === 0 ? (
+      <p>No se ha encontrado nada.</p>
+    ): (
         <MovieList movies={movies.slice(0, visibleMovies)} />
-        )}
+        )} 
+        
         <button
   onClick={() => setVisibleMovies(visibleMovies + 3)}
 >
   Show More
 </button>
+
+      < Footer />
+    
     </main>
   );
 }

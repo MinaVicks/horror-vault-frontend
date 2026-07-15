@@ -1,5 +1,11 @@
+import "./Preloader.css";
+
 function Preloader() {
-  return <div>Preloader</div>;
+  return (
+    <div className="preloader">
+      <span className="circle-preloader"></span>
+    </div>
+  );
 }
 
 export default Preloader;

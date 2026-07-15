@@ -1,8 +1,15 @@
+import Header from "../components/Header/Header.jsx";
+
+import Footer from "../components/Footer/Footer.jsx";
+
+
 function Home() {
   return (
     <main>
-      <h1>Horror Vault</h1>
-      <p>Discover horror movies.</p>
+      < Header />
+    
+      < Footer />
+      
     </main>
   );
 }

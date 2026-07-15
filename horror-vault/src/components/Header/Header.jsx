@@ -1,5 +1,5 @@
 function Header() {
-  return <div>Header</div>;
+  return  <div><h1>Horrur Vault</h1></div> ;
 }
 
 export default Header;
