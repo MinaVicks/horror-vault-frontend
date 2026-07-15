@@ -1,0 +1,12 @@
+.navigation__container {
+  min-height: 1vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #eaebe4;
+  
+}
+
+.navigation__logo{
+    height: 60px;
+    margin: 0%  1% ;
+}
