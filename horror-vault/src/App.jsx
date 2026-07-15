@@ -6,11 +6,14 @@ import Footer from "./components/Footer/Footer.jsx";
 import Home from "./pages/Home";
 import Movies from "./pages/Movies";
 
+import "./App.css"
+
 function App() {
   return (
     <BrowserRouter>
       <div className="page">
         <Header />
+        
         <main className="content">
           <Routes>
             <Route path="/" element={<Home />} />

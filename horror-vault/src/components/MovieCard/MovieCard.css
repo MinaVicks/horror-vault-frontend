@@ -1,0 +1,19 @@
+
+
+.movie-card__image{
+   border-radius: 30px;
+     width: 100%;
+ 
+}
+
+.movie-card__year{
+  font-family: "Helvetica";
+    font-weight:light;
+
+}
+
+.movie-card__title{
+    font-family: "Helvetica";
+    font-weight:bold;
+
+}

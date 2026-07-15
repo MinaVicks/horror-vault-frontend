@@ -1,0 +1,17 @@
+.footer__container{
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;
+  margin: 10%;
+}
+.footer__logo{
+  justify-content: center; 
+  align-items: center;
+}
+
+.footer__copyright{
+      font-family: "Helvetica";
+  font-weight:bold;
+
+}

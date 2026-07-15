@@ -59,7 +59,7 @@ function Movies() {
         <MovieList movies={movies.slice(0, visibleMovies)} />
         )} 
         
-        <button
+        <button 
   onClick={() => setVisibleMovies(visibleMovies + 3)}
 >
   Show More

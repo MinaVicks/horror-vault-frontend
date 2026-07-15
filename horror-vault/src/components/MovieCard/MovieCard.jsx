@@ -1,4 +1,5 @@
 import { IMAGE_BASE_URL } from "../../constants/constants.js";
+import "./MovieCard.css";
 
 function MovieCard({ movie }) {
   return (
@@ -14,8 +15,16 @@ function MovieCard({ movie }) {
       </h2>
 
       <p className="movie-card__year">
-        {movie.release_date}
+        Fecha de estreno {movie.release_date}
       </p>
+
+      <p className="movie-card__year">
+        Calificación {movie.vote_average}
+      </p>
+
+
+
+
     </article>
   );
 }

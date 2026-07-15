@@ -1,0 +1,138 @@
+.home__hero{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.home__hero-image{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:40px;
+}
+
+.home__hero-content{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:2px;
+
+    text-align:center;
+
+    color:white;
+}
+
+.home__hero-title{
+
+    max-width:700px;
+
+    font-size:48px;
+
+    font-weight:700;
+    font-family: "Helvetica";
+}
+
+
+
+ .home__hero-button{
+  width: 220px;
+  height: 64px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 40px;
+
+  background-color: #111;
+
+  color: white;
+  text-decoration: none;
+
+  transition: 0.3s;
+  font-family: "Helvetica";
+    font-weight:bold;
+}
+
+.home__hero-button:hover {
+  background-color: #B71F38;
+}
+
+.home__favorites {
+  width: min(100% - 64px, 1200px);
+  margin: 96px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__favorites-title {
+  width: 100%;
+  margin: 0 0 48px;
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: "Helvetica";
+  font-weight:bold;
+}
+
+.home__show-more {
+  min-width: 220px;
+  min-height: 58px;
+  margin-top: 56px;
+  padding: 0 32px;
+  border: 0;
+  border-radius: 999px;
+  background-color: #b71f38;
+  color: #fff;
+
+  font: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home__show-more:hover {
+  background-color: #111;
+  transform: translateY(-2px);
+}
+
+.home__show-more:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 4px;
+}
+
+.home__message {
+  margin: 48px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .home__favorites {
+    width: calc(100% - 32px);
+    margin-top: 64px;
+  }
+
+  .home__favorites-title {
+    margin-bottom: 32px;
+  }
+}
