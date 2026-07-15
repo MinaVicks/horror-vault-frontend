@@ -1,10 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+function Home() {
+  return (
+    <main>
+      <h1>Horror Vault</h1>
+      <p>Discover horror movies.</p>
+    </main>
+  );
+}
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+export default Home;
