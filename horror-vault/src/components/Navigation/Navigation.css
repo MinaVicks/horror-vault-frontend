@@ -1,12 +1,30 @@
 .navigation__container {
-  min-height: 1vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #eaebe4;
+ background-color: #eaebe4;
   
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  font-family: "Helvetica";
+  font-weight: normal;
+}
 .navigation__logo{
     height: 60px;
     margin: 0%  1% ;
+}
+
+.navigation__buttons{
+    height: 60px;
+     margin: 0%  1% ;
+     flex-direction: row;
+
 }

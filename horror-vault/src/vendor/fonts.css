@@ -1,16 +1,16 @@
 @font-face {
-  src: url(../vendor/fonts/web/Inter-Light.woff2);
-  font-family: "Inter";
+  src: url(../vendor/fonts/web/Helvetica.woff2);
+  font-family: "Helvetica";
   font-weight: normal;
 }
 @font-face {
-  src: url(../vendor/fonts/web/Inter-Bold.woff2);
-  font-family: "Inter";
+  src: url(../vendor/fonts/web/Helvetica-Bold.woff2);
+  font-family: "Helvetica";
   font-weight: bold;
 }
 
 @font-face {
-  src: url(../vendor/fonts/web/Inter-Medium.woff2);
-  font-family: "Inter";
-  font-weight: 600;
+  src: url(../vendor/fonts/web/Helvetica-Light.woff2);
+  font-family: "Helvetica";
+  font-weight: light;
 }

@@ -1,3 +1,15 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafbf3;
+}
+
+.content {
+  flex: 1;
+}
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

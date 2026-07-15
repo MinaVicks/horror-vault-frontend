@@ -4,9 +4,9 @@ import MovieList from "../components/MovieList/MovieList.jsx";
 import SearchForm from "../components/SearchForm/SearchForm.jsx";
 import Preloader from "../components/Preloader/Preloader.jsx";
 import { searchMovies } from "../utils/api.js";
-import Header from "../components/Header/Header.jsx";
+//import Header from "../components/Header/Header.jsx";
 
-import Footer from "../components/Footer/Footer.jsx";
+//import Footer from "../components/Footer/Footer.jsx";
 
 function Movies() {
   const [movies, setMovies] = useState([]);
@@ -44,9 +44,7 @@ function Movies() {
 
   return (
     <main>
-      < Header />
     
-
       <SearchForm
   query={query}
   setQuery={setQuery}
@@ -67,7 +65,7 @@ function Movies() {
   Show More
 </button>
 
-      < Footer />
+   
     
     </main>
   );
