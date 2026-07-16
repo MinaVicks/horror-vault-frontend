@@ -59,8 +59,7 @@
   align-items: center;
 
   border-radius: 40px;
-
-  background-color: #111;
+background-color: #B71F38;
 
   color: white;
   text-decoration: none;
@@ -68,8 +67,10 @@
   transition: 0.3s;
   font-family: "Helvetica";
     font-weight:bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .home_hero__button:hover {
-  background-color: #B71F38;
+  
+  background-color: #111;
 }
