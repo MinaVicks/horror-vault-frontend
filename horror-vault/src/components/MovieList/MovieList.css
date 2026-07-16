@@ -7,3 +7,24 @@
   margin-bottom: 5%;
 
 }
+
+@media screen and (max-width: 480px) {
+  .movie-list {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .movie-card {
+    width: 100%;
+    max-width: 255px;
+    margin: 0 auto;
+  }
+
+  .movie-card__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+  }
+}

@@ -1,5 +1,5 @@
 .navigation__container { 
-    background-color: #eaebe4; 
+    background-color: #fafbf3; 
 } 
 .navbar {
      display: flex; 
@@ -15,11 +15,11 @@
         font-weight: bold; 
     } 
     .navigation__logo{ 
-        height: 60px; 
+        height: 50px;
         margin: 0% 1% ; 
     } 
     .navigation__buttons{ 
-        height: 60px; 
+        height: 50px; 
         margin: 0% 1% ; 
         flex-direction: row;
     
@@ -47,17 +47,15 @@
 
 @media screen and (max-width: 320px) {
     .navigation__logo{ 
-        height: 40px; 
+        height: 30px;
         margin: 0% 1% ; 
     } 
-  
-}
 
-@media screen and (max-width: 375px) {
-    .navigation__logo{ 
-        height: 50px; 
+        .navigation__buttons{ 
+        height: 30px; 
         margin: 0% 1% ; 
-    } 
+        flex-direction: row;
+    
+    }
   
 }
-
