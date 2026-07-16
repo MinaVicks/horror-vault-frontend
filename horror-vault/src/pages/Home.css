@@ -100,7 +100,7 @@ border: none;
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
   .home__favorites {
     width: calc(100% - 32px);
     margin-top: 64px;
@@ -109,4 +109,52 @@ border: none;
   .home__favorites-title {
     margin-bottom: 32px;
   }
+
+  .home__hero-title{
+
+    max-width:300px;
+
+    font-size:12px;
+
+    font-weight:bold;
+    font-family: "Helvetica";
+}
+
+.home__hero-image{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:0px;
+}
+.home__hero{
+ 
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.home__hero-content{
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:2px;
+
+    text-align:center;
+
+    color:black;
+}
+  
 }

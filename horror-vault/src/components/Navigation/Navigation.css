@@ -44,3 +44,20 @@
 .navigation__link:active {
   color: #B71F38;
 }
+
+@media screen and (max-width: 320px) {
+    .navigation__logo{ 
+        height: 40px; 
+        margin: 0% 1% ; 
+    } 
+  
+}
+
+@media screen and (max-width: 375px) {
+    .navigation__logo{ 
+        height: 50px; 
+        margin: 0% 1% ; 
+    } 
+  
+}
+
