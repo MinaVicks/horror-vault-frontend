@@ -4,6 +4,8 @@ import MovieList from "../components/MovieList/MovieList.jsx";
 import SearchForm from "../components/SearchForm/SearchForm.jsx";
 import Preloader from "../components/Preloader/Preloader.jsx";
 import { searchMovies } from "../utils/api.js";
+import "./Movies.css"
+import "./Home.css"
 //import Header from "../components/Header/Header.jsx";
 
 //import Footer from "../components/Footer/Footer.jsx";
@@ -31,7 +33,7 @@ function Movies() {
   useEffect(() => {
     getHorrorMovies()
       .then((data) => {
-        console.log(data.results);
+        
         setMovies(data.results);
       })
       .catch((err) => {
@@ -50,7 +52,7 @@ function Movies() {
   setQuery={setQuery}
   onSearch={handleSearch}
 />
-
+<section className="home__favorites">
       {loading ? (
         <Preloader />
       ) : movies.length === 0 ? (
@@ -59,11 +61,11 @@ function Movies() {
         <MovieList movies={movies.slice(0, visibleMovies)} />
         )} 
         
-        <button 
-  onClick={() => setVisibleMovies(visibleMovies + 3)}
->
-  Show More
-</button>
+        <button onClick={() => setVisibleMovies(visibleMovies + 3)} className="home__hero-button">
+              Ver más
+        </button>
+
+        </section>
 
    
     
