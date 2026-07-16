@@ -10,8 +10,8 @@ function Navigation() {
                 <img src={logoicon} alt="Logo Horror Vault" className="navigation__logo" /> 
                 </div>
                  <ul className="nav-links"> 
-                  <li > <Link to="/" className="navigation__home">Home</Link> </li> 
-                  <li > <Link to="/movies" className="navigation__movies">Peliculas</Link> </li> </ul>
+                  <li > <Link to="/" className="navigation__link">Home</Link> </li> 
+                  <li > <Link to="/movies" className="navigation__link">Peliculas</Link> </li> </ul>
                    </nav>
             </div>;
 }
